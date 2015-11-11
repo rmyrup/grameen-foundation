@@ -133,7 +133,7 @@ $grameen-sand-darker: #cac3af;
 /*
  * CSS Merge Fixes
  *
- * Anywhere you see "!important" attached to a style - it's to override styles in a different file from a different agency.
+ * Anywhere in this document you see "!important" attached to a style - it's to override styles in a different file from a different agency.
  * The styles directly listed below are overrides and/or resets as well.
  **/
 .row.top-stripe {
@@ -153,7 +153,7 @@ body.cm {
     font-weight: 400 !important;
   }
 }
-body.front {
+body.cm.front {
   .button {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -166,7 +166,7 @@ body.cm.front .top-bar-wrap.contain-to-grid,
 body.cm.not-front .top-bar-wrap.contain-to-grid {
   margin-top: 0;
 }
-body.cm.font .top-stripe,
+body.cm.front .top-stripe,
 body.cm.not-front .top-stripe {
   margin-top: 3px;
 }

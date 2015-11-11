@@ -205,7 +205,16 @@ function grameen_foundation_preprocess_page(&$variables) {
  */
 function grameen_foundation_preprocess_html(&$variables) {
 
-    // add meta desc to the front page ONLY with this conditional
+    // check if set to use CM template files, or the original ones
+    $theme_setting = theme_get_setting('template_page_use_cm');
+
+    if(!empty($theme_setting) && is_int($theme_setting) && $theme_setting == 1)
+    {
+        // add class to body
+        $variables['classes_array'][] = 'cm';
+    }
+
+        // add meta desc to the front page ONLY with this conditional
     if (drupal_is_front_page()) {
         $meta_desc_render = array(
             '#type' => 'html_tag',
@@ -551,12 +560,6 @@ function grameen_foundation_form_alter(&$form, &$form_state, $form_id) {
         // Add extra attributes to the text box
         $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search Site';}";
         $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search Site') {this.value = '';}";
-
-//        echo '<pre>';
-//        print_r($form);
-//        echo '</pre>';
-//        die();
-
     }
 
     // Sexy submit buttons
