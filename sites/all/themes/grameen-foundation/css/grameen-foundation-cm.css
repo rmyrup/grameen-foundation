@@ -46,42 +46,60 @@ Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
  * Custom styling variables
  **/
 .bg-grameen-green {
+  color: #ffffff;
   background-color: #a4b170; }
 
 .bg-grameen-sand {
+  color: #34657f;
   background-color: #d1ccbd; }
 
+.bg-grameen-orange {
+  color: #ffffff;
+  background-color: #ff6600; }
+
+.link:hover {
+  text-decoration: underline; }
 .link.white {
   color: #eaeaea; }
   .link.white:hover {
     color: #c4c4c4; }
+.link.grameen-orange {
+  color: #ff6600; }
+  .link.grameen-orange:hover {
+    color: #993d00; }
 .link.grameen-blue {
   color: #34657f; }
-  .link.grameen-blue:hover {
-    text-decoration: underline; }
 
+.button:hover {
+  text-decoration: none; }
 .button.white {
   color: #34657f;
   background-color: #eaeaea; }
   .button.white:hover {
-    background-color: #d1d1d1;
-    text-decoration: none; }
+    background-color: #d1d1d1; }
 .button.grameen-blue {
+  color: #fff;
   background-color: #34657f; }
   .button.grameen-blue:hover {
     background-color: #25485b; }
+.button.grameen-orange {
+  color: #fff;
+  background-color: #ff6600; }
+  .button.grameen-orange:hover {
+    background-color: #993d00; }
 
 /*******************************************************************/
 /*
  * CSS Merge Fixes
  *
- * Anywhere in this docu you see "!important" attached to a style - it's to override styles in a different file from a different agency.
+ * Anywhere in this document you see "!important" attached to a style - it's to override styles in a different file from a different agency.
  * The styles directly listed below are overrides and/or resets as well.
  **/
 .row.top-stripe {
   margin-top: 20px; }
 
 body.cm h2, body.cm h3 {
+  color: inherit !important;
   font-family: "bebas-neue",sans-serif; }
 body.cm h2 {
   font-size: 42px !important; }
@@ -229,80 +247,80 @@ header {
     .region-cm-header-search .search-form-wrapper.show {
       display: block; }
 
-.block-views-cm-home-block-one-block {
+.block-views-cm-home-block-1-block {
   min-height: 420px;
   background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-size: cover;
   backround-position: center center; }
-  .block-views-cm-home-block-one-block .block-content .block-body {
+  .block-views-cm-home-block-1-block .block-content .block-body {
     padding-top: 60px;
     padding-bottom: 60px; }
-  .block-views-cm-home-block-one-block .block-content p {
+  .block-views-cm-home-block-1-block .block-content p {
     display: block;
     width: 470px;
     margin: 0;
     padding: 0;
     color: #fff;
     text-transform: uppercase;
-    text-align: justify;
+    text-align: left;
     font-family: "bebas-neue",sans-serif;
     font-size: 50px;
     line-height: 46px; }
-  .block-views-cm-home-block-one-block .block-content span {
+  .block-views-cm-home-block-1-block .block-content span {
     display: block;
     font-size: 80px;
     line-height: 72px; }
 
 @media only screen and (max-width: 40em) {
-  .block-views-cm-home-block-one-block {
+  .block-views-cm-home-block-1-block {
     position: relative;
     background-position: center 80%; }
-    .block-views-cm-home-block-one-block .block-content {
+    .block-views-cm-home-block-1-block .block-content {
       position: absolute;
       bottom: 0; }
-      .block-views-cm-home-block-one-block .block-content .block-body {
+      .block-views-cm-home-block-1-block .block-content .block-body {
         padding-bottom: 20px;
         padding-left: 20px;
         padding-right: 20px; }
-      .block-views-cm-home-block-one-block .block-content p {
+      .block-views-cm-home-block-1-block .block-content p {
         width: 80%;
         max-width: 300px;
         font-size: 26px;
         line-height: 22px; }
-      .block-views-cm-home-block-one-block .block-content span {
+      .block-views-cm-home-block-1-block .block-content span {
         font-size: 40px;
         line-height: 36px; } }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .block-views-cm-home-block-one-block .block-content p {
+  .block-views-cm-home-block-1-block .block-content p {
     width: 350px;
     font-size: 36px;
     line-height: 30px; }
-  .block-views-cm-home-block-one-block .block-content span {
+  .block-views-cm-home-block-1-block .block-content span {
     font-size: 56px;
     line-height: 50px; } }
-.block-views-cm-home-block-two-block {
+.block-views-cm-home-block-2-block {
   background-color: #34657f;
   color: #fff;
   font-size: 16px;
   font-family: "bebas-neue",sans-serif;
   text-align: center; }
-  .block-views-cm-home-block-two-block p {
+  .block-views-cm-home-block-2-block p {
     margin-bottom: 0;
     font-size: 22px; }
-  .block-views-cm-home-block-two-block .block-content {
+  .block-views-cm-home-block-2-block .block-content {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px; }
-  .block-views-cm-home-block-two-block .button {
+  .block-views-cm-home-block-2-block .button {
     margin-left: 20px; }
 
 @media only screen and (max-width: 40em) {
-  .block-views-cm-home-block-two-block .button {
+  .block-views-cm-home-block-2-block .button {
     display: block;
     margin: 20px 0 0 0; } }
-.block-views-cm-home-block-three-block {
+.block-views-cm-home-block-3-block {
   background-color: #a4b170;
   background-image: url("/sites/all/themes/grameen-foundation/images/striped-bar-1.png");
   background-repeat: repeat-x;
@@ -311,63 +329,63 @@ header {
   color: #fff;
   font-size: 16px;
   font-family: "bebas-neue",sans-serif; }
-  .block-views-cm-home-block-three-block .body {
+  .block-views-cm-home-block-3-block .body {
     margin-top: 40px;
     margin-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
     text-align: center; }
-    .block-views-cm-home-block-three-block .body p {
+    .block-views-cm-home-block-3-block .body p {
       font-size: inherit;
       font-family: "Helvetica Neue eText Pro Light"; }
-    .block-views-cm-home-block-three-block .body h2, .block-views-cm-home-block-three-block .body h3 {
+    .block-views-cm-home-block-3-block .body h2, .block-views-cm-home-block-3-block .body h3 {
       color: #fff; }
-  .block-views-cm-home-block-three-block .button:first-child {
+  .block-views-cm-home-block-3-block .button:first-child {
     margin-right: 20px; }
-  .block-views-cm-home-block-three-block .button:last-child {
+  .block-views-cm-home-block-3-block .button:last-child {
     margin-right: 0 !important; }
-  .block-views-cm-home-block-three-block .image {
+  .block-views-cm-home-block-3-block .image {
     padding: 15px 0 25px 0; }
 
 @media only screen and (max-width: 40em) {
-  .block-views-cm-home-block-three-block .block-content {
+  .block-views-cm-home-block-3-block .block-content {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px; }
-    .block-views-cm-home-block-three-block .block-content .body {
+    .block-views-cm-home-block-3-block .block-content .body {
       margin-top: 10px;
       margin-bottom: 10px;
       padding-left: 0;
       padding-right: 0; } }
-.block-views-cm-home-block-four-block {
+.block-views-cm-home-block-4-block {
   background-color: #d1ccbd;
   color: #34657f;
   text-align: center; }
-  .block-views-cm-home-block-four-block p {
+  .block-views-cm-home-block-4-block p {
     margin-bottom: 0;
     font-size: 14px;
     font-family: "Helvetica Neue eText Pro Light"; }
-  .block-views-cm-home-block-four-block .block-content {
+  .block-views-cm-home-block-4-block .block-content {
     padding-top: 20px;
     padding-bottom: 20px; }
-    .block-views-cm-home-block-four-block .block-content .row:nth-child(2) .columns {
+    .block-views-cm-home-block-4-block .block-content .row:nth-child(2) .columns {
       margin-top: 20px; }
-    .block-views-cm-home-block-four-block .block-content .body {
+    .block-views-cm-home-block-4-block .block-content .body {
       padding-top: 20px;
       padding-left: 40px;
       padding-right: 40px; }
 
 @media only screen and (max-width: 40em) {
-  .block-views-cm-home-block-four-block .block-content {
+  .block-views-cm-home-block-4-block .block-content {
     padding-left: 20px;
     padding-right: 20px; }
-    .block-views-cm-home-block-four-block .block-content .body {
+    .block-views-cm-home-block-4-block .block-content .body {
       padding-left: 0;
       padding-right: 0; } }
 .block-views-cm-home-blog-block {
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("/sites/all/themes/grameen-foundation/images/images-cm/cm-home-blog-bg.jpg");
+  background-image: url("/sites/default/files/cm-home-blog-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -392,12 +410,13 @@ header {
   background-image: url("/sites/all/themes/grameen-foundation/images/striped-bar-1.png");
   background-repeat: repeat-x;
   background-attachment: scroll;
-  background-position: bottom; }
+  background-position: bottom;
+  color: #fff; }
   .block-views-cm-home-subscribe-block input[type=email] {
     max-width: 350px;
     margin-left: auto;
     margin-right: auto; }
-  .block-views-cm-home-subscribe-block h3 {
+  .block-views-cm-home-subscribe-block h2, .block-views-cm-home-subscribe-block h3 {
     color: #fff; }
   .block-views-cm-home-subscribe-block .body {
     padding-top: 60px;

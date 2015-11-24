@@ -82,15 +82,28 @@ $grameen-blue: #34657f;
 $grameen-blue-hover: darken($grameen-blue, 10%);
 $grameen-green: #a4b170;
 $grameen-sand-darker: #cac3af;
+$grameen-orange: #ff6600;
+$grameen-orange-hover: darken($grameen-orange, 20%);
+
 
 .bg-grameen-green {
+  color: #ffffff;
   background-color: $grameen-green;
 }
 .bg-grameen-sand {
+  color: $grameen-blue;
   background-color: $grameen-sand;
+}
+.bg-grameen-orange {
+  color: #ffffff;
+  background-color: $grameen-orange;
 }
 
 .link {
+  &:hover {
+    text-decoration: underline;
+  }
+
   &.white {
     color: #eaeaea;
 
@@ -99,31 +112,48 @@ $grameen-sand-darker: #cac3af;
     }
   }
 
-  &.grameen-blue {
-    color: $grameen-blue;
+  &.grameen-orange {
+    color: $grameen-orange;
 
     &:hover {
-      text-decoration: underline;
+      color: $grameen-orange-hover;
     }
+  }
+
+  &.grameen-blue {
+    color: $grameen-blue;
   }
 }
 
 .button {
+  &:hover {
+    text-decoration: none;
+  }
+
   &.white {
     color: $grameen-blue;
     background-color: #eaeaea;
 
     &:hover {
       background-color: darken(#eaeaea, 10%);
-      text-decoration: none;
     }
   }
 
   &.grameen-blue {
+    color: #fff;
     background-color: $grameen-blue;
 
     &:hover {
       background-color: $grameen-blue-hover;
+    }
+  }
+
+  &.grameen-orange {
+    color: #fff;
+    background-color: $grameen-orange;
+
+    &:hover {
+      background-color: $grameen-orange-hover;
     }
   }
 }
@@ -141,6 +171,7 @@ $grameen-sand-darker: #cac3af;
 }
 body.cm {
   h2, h3 {
+    color: inherit !important;
     font-family: "bebas-neue",sans-serif;
   }
 
@@ -377,7 +408,7 @@ header {
 }
 
 
-.block-views-cm-home-block-one-block {
+.block-views-cm-home-block-1-block {
   min-height: 420px;
 
   background-color: rgba(0, 0, 0, 0.5);
@@ -398,7 +429,7 @@ header {
       padding: 0;
       color: #fff;
       text-transform: uppercase;
-      text-align: justify;
+      text-align: left;
       font-family: "bebas-neue",sans-serif;
       font-size: 50px;
       line-height: 46px;
@@ -412,7 +443,7 @@ header {
   }
 }
 @media #{$small-only} {
-  .block-views-cm-home-block-one-block {
+  .block-views-cm-home-block-1-block {
     position: relative;
     background-position: center 80%;
 
@@ -441,7 +472,7 @@ header {
   }
 }
 @media #{$medium-only} {
-  .block-views-cm-home-block-one-block {
+  .block-views-cm-home-block-1-block {
     .block-content {
       p {
         width: 350px;
@@ -458,7 +489,7 @@ header {
 }
 
 
-.block-views-cm-home-block-two-block {
+.block-views-cm-home-block-2-block {
   background-color: $grameen-blue;
 
   color: #fff;
@@ -483,7 +514,7 @@ header {
   }
 }
 @media #{$small-only} {
-  .block-views-cm-home-block-two-block {
+  .block-views-cm-home-block-2-block {
     .button {
       display: block;
       margin: 20px 0 0 0;
@@ -492,7 +523,7 @@ header {
 }
 
 
-.block-views-cm-home-block-three-block {
+.block-views-cm-home-block-3-block {
   background-color: $grameen-green;
   background-image: url('/sites/all/themes/grameen-foundation/images/striped-bar-1.png');
   background-repeat: repeat-x;
@@ -536,7 +567,7 @@ header {
   }
 }
 @media #{$small-only} {
-  .block-views-cm-home-block-three-block {
+  .block-views-cm-home-block-3-block {
     .block-content {
       padding-top: 20px;
       padding-bottom: 20px;
@@ -554,7 +585,7 @@ header {
 }
 
 
-.block-views-cm-home-block-four-block {
+.block-views-cm-home-block-4-block {
   background-color: $grameen-sand;
 
   color: $grameen-blue;
@@ -584,7 +615,7 @@ header {
   }
 }
 @media #{$small-only} {
-  .block-views-cm-home-block-four-block {
+  .block-views-cm-home-block-4-block {
     .block-content {
       padding-left: 20px;
       padding-right: 20px;
@@ -600,7 +631,7 @@ header {
 
 .block-views-cm-home-blog-block {
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url('/sites/all/themes/grameen-foundation/images/images-cm/cm-home-blog-bg.jpg');
+  background-image: url('/sites/default/files/cm-home-blog-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -637,6 +668,7 @@ header {
   background-repeat: repeat-x;
   background-attachment: scroll;
   background-position: bottom;
+  color: #fff;
 
   input[type=email] {
     max-width: 350px;
@@ -644,7 +676,7 @@ header {
     margin-right: auto;
   }
 
-  h3 {
+  h2, h3 {
     color: #fff;
   }
 
