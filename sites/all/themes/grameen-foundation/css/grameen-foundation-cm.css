@@ -146,7 +146,8 @@ header {
     background-color: transparent; }
     .top-bar-wrap.cm-override .top-bar.cm-override .title-area .toggle-topbar .button-donate {
       color: #ffffff;
-      background-color: #ff6600; }
+      background-color: #ff6600;
+      margin-right: 10px; }
       .top-bar-wrap.cm-override .top-bar.cm-override .title-area .toggle-topbar .button-donate:hover {
         background-color: #993d00; }
     .top-bar-wrap.cm-override .top-bar.cm-override .top-bar-section.cm-override {
