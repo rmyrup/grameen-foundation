@@ -144,6 +144,11 @@ header {
   background-color: #34657f; }
   .top-bar-wrap.cm-override .top-bar.cm-override {
     background-color: transparent; }
+    .top-bar-wrap.cm-override .top-bar.cm-override .title-area .toggle-topbar .button-donate {
+      color: #ffffff;
+      background-color: #ff6600; }
+      .top-bar-wrap.cm-override .top-bar.cm-override .title-area .toggle-topbar .button-donate:hover {
+        background-color: #993d00; }
     .top-bar-wrap.cm-override .top-bar.cm-override .top-bar-section.cm-override {
       margin-top: 0; }
       .top-bar-wrap.cm-override .top-bar.cm-override .top-bar-section.cm-override #main-menu.main-nav {
@@ -287,6 +292,7 @@ header {
         width: 80%;
         max-width: 300px;
         font-size: 26px;
+        text-align: left;
         line-height: 22px; }
       .block-views-cm-home-block-1-block .block-content span {
         font-size: 40px;
@@ -295,6 +301,7 @@ header {
   .block-views-cm-home-block-1-block .block-content p {
     width: 350px;
     font-size: 36px;
+    text-align: left;
     line-height: 30px; }
   .block-views-cm-home-block-1-block .block-content span {
     font-size: 56px;

@@ -239,6 +239,19 @@ header {
   .top-bar.cm-override {
     background-color: transparent;
 
+    .title-area {
+      .toggle-topbar {
+        .button-donate {
+          color: #ffffff;
+          background-color: $grameen-orange;
+
+          &:hover {
+            background-color: $grameen-orange-hover;
+          }
+        }
+      }
+    }
+
     .top-bar-section.cm-override {
       margin-top: 0;
 
@@ -461,6 +474,7 @@ header {
         width: 80%;
         max-width: 300px;
         font-size: 26px;
+        text-align: left;
         line-height: 22px;
       }
 
@@ -477,6 +491,7 @@ header {
       p {
         width: 350px;
         font-size: 36px;
+        text-align: left;
         line-height: 30px;
       }
 
